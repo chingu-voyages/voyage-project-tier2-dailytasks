@@ -130,10 +130,6 @@ implement to enhance this app, if time permits.
 - [ ] Clicking the "Save" button successfully updates the local storage with the latest task list state and progress.
 - [ ] The "Save" button is positioned intuitively and visibly for easy access.
 
-## Acknowledgements
-
-Jim's commitment to fostering an environment of productivity and organization has laid the groundwork for a project that promises to empower users in managing their daily tasks effectively. His initiative in conceptualizing this project has been invaluable, and we deeply appreciate his contribution to this endeavor
-
 ## About Chingu
 
 If you aren’t yet a member of Chingu we invite you to join us. We help our 
