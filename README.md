@@ -117,6 +117,7 @@ implement to enhance this app, if time permits.
 
 ### Extras (Not Required)
 
+- [ ] Add a filter to allow the user to list tasks scheduled for a particular day or week. Alternatively, allow the filter to scroll and/or highlight tasks that match the filter criteria
 - [ ] Reset button to refresh from last saved copy in local storage
 - [ ] Provide visual cues such as color changes or labels to indicate completed tasks for improved user experience.
 
