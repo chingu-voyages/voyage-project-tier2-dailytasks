@@ -1,17 +1,18 @@
 # voyage-project-tier2-dailytasks
+
 Voyage Project - Tier 2 - Daily tasks productivity tool
 
 ## Table of Contents
 
-* [Overview](#overview)
-* [General Instructions](#general-instructions)
-* [Requirements & Specifications](#requirements-specifications)
-* [Acknowledgements](#acknowledgements)
-* [About Chingu](#about-chingu)
+- [Overview](#overview)
+- [General Instructions](#general-instructions)
+- [Requirements & Specifications](#requirements-specifications)
+- [Acknowledgements](#acknowledgements)
+- [About Chingu](#about-chingu)
 
 ## Overview
 
-A daily task productivity tool is a system designed to help individuals organize and manage their tasks effectively on a day-to-day basis. 
+A daily task productivity tool is a system designed to help individuals organize and manage their tasks effectively on a day-to-day basis.
 
 It typically includes features such as task creation, scheduling, prioritization, and tracking. Users can input tasks, assign deadlines, set priorities, categorize tasks based on projects or urgency, and monitor progress.
 
@@ -39,8 +40,8 @@ extend it in ways we haven't envisioned. In other words, use the power of
 teamwork to make it distinctive and unique.
 
 Take note that we haven't given specific direction on what your UI/UX should
-look like. This is another area where you and your team can put your creativity 
-to work! 
+look like. This is another area where you and your team can put your creativity
+to work!
 
 ## Requirements & Specifications
 
@@ -51,26 +52,27 @@ implement to enhance this app, if time permits.
 
 #### Structure
 
-- [ ] This is a purely frontend application. No backend is required. 
-- [ ] You may use any languages, tools, or libraries you prefer when designing and building this app. 
-- [ ] We've included a JSON file containing the raw data in the `/assets` directory in this repo. 
+- [ ] This is a purely frontend application. No backend is required.
+- [ ] You may use any languages, tools, or libraries you prefer when designing and building this app.
+- [ ] We've included a JSON file containing the raw data in the `/assets` directory in this repo.
+- [ ] The JSON file is for the development purposes, and to help you get a better idea about the checklist structure. Feel free to adjust, change, or even not to use it.
 - [ ] The system should parse the provided JSON file to categorize and structure tasks according to categories, activity types, and individual tasks.
-    - Category of Work Array:
-        - The system must process the JSON data to identify different categories of work, each represented as an array.
-        - Activity Type Array:
-            - Within each category, the system should categorize tasks further into activity types, forming an array of these types.
-            - Task Array:
-                - Tasks within each activity type should be listed in an array, including:
-                - Task Name: The name/title of the task.
-                - Task Detailed Description: A comprehensive description or details about the task.
-                - Due Date:
-                    - For monthly tasks: The day number of the month the task is due on.
-                    - For weekly tasks: Allowance for the day name (e.g., 'Sunday') or the day number.
-                    - Flexibility to accept multiple day numbers or day names for a task.
+  - Category of Work Array:
+    - The system must process the JSON data to identify different categories of work, each represented as an array.
+    - Activity Type Array:
+      - Within each category, the system should categorize tasks further into activity types, forming an array of these types.
+      - Task Array:
+        - Tasks within each activity type should be listed in an array, including:
+        - Task Name: The name/title of the task.
+        - Task Detailed Description: A comprehensive description or details about the task.
+        - Due Date:
+          - For monthly tasks: The day number of the month the task is due on.
+          - For weekly tasks: Allowance for the day name (e.g., 'Sunday') or the day number.
+          - Flexibility to accept multiple day numbers or day names for a task.
 - [ ] Automatically generate a daily checklist for tasks based on a matrix of categories and tasks listed against days of the month.
 - [ ] You may **_NOT_** use AI-base solution generators like GitHub CoPilot.
 - [ ] Useful links and resources:
-    - [Learn about LocalStorage in JavaScript](https://jagathishsaravanan.medium.com/learn-about-localstorage-in-javascript-228b3290275)
+  - [Learn about LocalStorage in JavaScript](https://jagathishsaravanan.medium.com/learn-about-localstorage-in-javascript-228b3290275)
 
 #### Styling
 
@@ -82,38 +84,38 @@ implement to enhance this app, if time permits.
 #### Functionality
 
 - Initial Checklist Generation:
-    - [ ] Utilize the provided JSON data to generate the initial matrix that lists categories and tasks on the left side and days of the month along the top (triggered by user).
-    - [ ] Display checkboxes at the intersections of categories/tasks and days.
-    - [ ] Generate the matrix only for the current month.
-    - [ ] Determine the current month dynamically based on the system's date.
+  - [ ] Utilize the provided JSON data to generate the initial matrix that lists categories and tasks on the left side and days of the month along the top (triggered by user).
+  - [ ] Display checkboxes at the intersections of categories/tasks and days.
+  - [ ] Generate the matrix only for the current month.
+  - [ ] Determine the current month dynamically based on the system's date.
 - Categories & Tasks
-    - [ ] Display all available categories and their associated tasks on the left side of the matrix.
-    - [ ] Populate the matrix with tasks listed under their respective categories.
+  - [ ] Display all available categories and their associated tasks on the left side of the matrix.
+  - [ ] Populate the matrix with tasks listed under their respective categories.
 - Days of the Month
-    - [ ] Populate the top row of the matrix with the days of the current month.
-    - [ ] Ensure correct alignment of dates based on the current month's calendar.
+  - [ ] Populate the top row of the matrix with the days of the current month.
+  - [ ] Ensure correct alignment of dates based on the current month's calendar.
 - Checkbox Intersections
-    - [ ] Display checkboxes at the intersections of each task/category and the corresponding day of the month.
-    - [ ] Populate checkboxes only for the specific date(s) tasks are to be completed, as mentioned in the JSON data.
-    - [ ] Reflect completion status by dynamically checking/unchecking these checkboxes based on the completion status data.
+  - [ ] Display checkboxes at the intersections of each task/category and the corresponding day of the month.
+  - [ ] Populate checkboxes only for the specific date(s) tasks are to be completed, as mentioned in the JSON data.
+  - [ ] Reflect completion status by dynamically checking/unchecking these checkboxes based on the completion status data.
 - Additional Notes:
-    - [ ] Upon completing a task (checking the corresponding checkbox), enable a feature to input additional notes related to that specific task.
-    - [ ] Direct users to a dedicated page or modal window where they can type, edit, and save notes related to the completed task.
-    - [ ] Implement a user-friendly text input field or area, enabling users to add comprehensive details or comments.
-    - [ ] Include a "Save" or "Submit" button to store these notes and associate them with the completed taskfor future reference or review.
+  - [ ] Upon completing a task (checking the corresponding checkbox), enable a feature to input additional notes related to that specific task.
+  - [ ] Direct users to a dedicated page or modal window where they can type, edit, and save notes related to the completed task.
+  - [ ] Implement a user-friendly text input field or area, enabling users to add comprehensive details or comments.
+  - [ ] Include a "Save" or "Submit" button to store these notes and associate them with the completed taskfor future reference or review.
 - Local Storage Implementation
-    - [ ] Implement local storage functionality post-initial checklist generation.
-    - [ ] Store the generated checklist in the local storage to persist user data beyond the initial session.
-    - [ ] Update the checklist in the local storage whenever changes are made.
-    - [ ] Introduce a "Save" button specifically for updating local storage.
-    - [ ] On clicking "Save," capture the current state of the task list, including modifications and progress.
-    - [ ] Store this updated data in the local storage to maintain the latest user changes.
+  - [ ] Implement local storage functionality post-initial checklist generation.
+  - [ ] Store the generated checklist in the local storage to persist user data beyond the initial session.
+  - [ ] Update the checklist in the local storage whenever changes are made.
+  - [ ] Introduce a "Save" button specifically for updating local storage.
+  - [ ] On clicking "Save," capture the current state of the task list, including modifications and progress.
+  - [ ] Store this updated data in the local storage to maintain the latest user changes.
 - Dynamic Data Handling
-    - [ ] Fetch and display only relevant tasks and days for the current month.
-    - [ ] Handle cases where tasks may have different due dates within the month.
-    - [ ] If the user clicks on a task that has been completed, remove the check mark. In other words, clicking toggles the
-    checkmark
-    - [ ] Click on task name to show additional detailed description in a popup
+  - [ ] Fetch and display only relevant tasks and days for the current month.
+  - [ ] Handle cases where tasks may have different due dates within the month.
+  - [ ] If the user clicks on a task that has been completed, remove the check mark. In other words, clicking toggles the
+        checkmark
+  - [ ] Click on task name to show additional detailed description in a popup
 
 ### Extras (Not Required)
 
@@ -133,6 +135,6 @@ implement to enhance this app, if time permits.
 
 ## About Chingu
 
-If you aren’t yet a member of Chingu we invite you to join us. We help our 
-members transform what they’ve learned in courses & tutorials into the 
+If you aren’t yet a member of Chingu we invite you to join us. We help our
+members transform what they’ve learned in courses & tutorials into the
 practical experience employers need and want.
